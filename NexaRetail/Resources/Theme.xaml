@@ -1,0 +1,152 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!-- ========================================================= -->
+    <!-- NEXARETAIL APPLICATION THEME                              -->
+    <!-- ========================================================= -->
+
+
+    <!-- ========================= -->
+    <!-- MAIN APPLICATION COLORS   -->
+    <!-- ========================= -->
+
+    <SolidColorBrush
+        x:Key="PrimaryBlueBrush"
+        Color="#2196F3" />
+
+    <SolidColorBrush
+        x:Key="TextPrimaryBrush"
+        Color="#FFFFFF" />
+
+    <SolidColorBrush
+        x:Key="TextSecondaryBrush"
+        Color="#8FA7D8" />
+
+
+    <!-- ========================= -->
+    <!-- LOGIN BACKGROUND          -->
+    <!-- ========================= -->
+
+    <LinearGradientBrush
+        x:Key="LoginBackgroundBrush"
+        StartPoint="0,0"
+        EndPoint="1,1">
+
+        <GradientStop
+            Color="#061333"
+            Offset="0" />
+
+        <GradientStop
+            Color="#0B1D52"
+            Offset="0.50" />
+
+        <GradientStop
+            Color="#30106B"
+            Offset="1" />
+
+    </LinearGradientBrush>
+
+
+    <!-- ========================= -->
+    <!-- LOGIN CARD                 -->
+    <!-- ========================= -->
+
+    <SolidColorBrush
+        x:Key="LoginCardBackgroundBrush"
+        Color="#111F52" />
+
+    <SolidColorBrush
+        x:Key="LoginCardBorderBrush"
+        Color="#3159A8" />
+
+
+    <!-- ========================= -->
+    <!-- INPUT BOX                  -->
+    <!-- ========================= -->
+
+    <SolidColorBrush
+        x:Key="InputBackgroundBrush"
+        Color="#101E4A" />
+
+    <SolidColorBrush
+        x:Key="InputBorderBrush"
+        Color="#3159A8" />
+
+
+    <!-- ========================= -->
+    <!-- BUTTON                     -->
+    <!-- ========================= -->
+
+    <LinearGradientBrush
+        x:Key="LoginButtonBrush"
+        StartPoint="0,0"
+        EndPoint="1,0">
+
+        <GradientStop
+            Color="#19A8F5"
+            Offset="0" />
+
+        <GradientStop
+            Color="#315CF5"
+            Offset="0.50" />
+
+        <GradientStop
+            Color="#9829F5"
+            Offset="1" />
+
+    </LinearGradientBrush>
+
+
+    <!-- ========================= -->
+    <!-- SHADOWS                    -->
+    <!-- ========================= -->
+
+    <DropShadowEffect
+        x:Key="CardShadow"
+        BlurRadius="20"
+        ShadowDepth="5"
+        Opacity="0.35" />
+
+    <DropShadowEffect
+        x:Key="ButtonShadow"
+        BlurRadius="12"
+        ShadowDepth="3"
+        Opacity="0.30" />
+
+
+    <!-- ========================= -->
+    <!-- COMMON TEXT STYLES        -->
+    <!-- ========================= -->
+
+    <Style
+        x:Key="PrimaryTextStyle"
+        TargetType="TextBlock">
+
+        <Setter
+            Property="Foreground"
+            Value="{StaticResource TextPrimaryBrush}" />
+
+        <Setter
+            Property="FontFamily"
+            Value="Segoe UI" />
+
+    </Style>
+
+
+    <Style
+        x:Key="SecondaryTextStyle"
+        TargetType="TextBlock">
+
+        <Setter
+            Property="Foreground"
+            Value="{StaticResource TextSecondaryBrush}" />
+
+        <Setter
+            Property="FontFamily"
+            Value="Segoe UI" />
+
+    </Style>
+
+
+</ResourceDictionary>
