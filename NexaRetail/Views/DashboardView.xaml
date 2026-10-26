@@ -271,10 +271,8 @@
               Margin="30">
 
             <Grid.RowDefinitions>
-
                 <RowDefinition Height="70"/>
                 <RowDefinition Height="*"/>
-
             </Grid.RowDefinitions>
 
 
@@ -331,20 +329,16 @@
                   Margin="0,20,0,0">
 
                 <Grid.RowDefinitions>
-
                     <RowDefinition Height="150"/>
                     <RowDefinition Height="*"/>
-
                 </Grid.RowDefinitions>
 
 
                 <Grid.ColumnDefinitions>
-
                     <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="*"/>
-
                 </Grid.ColumnDefinitions>
 
 
@@ -362,7 +356,9 @@
                                    FontSize="11"
                                    Foreground="#71809F"/>
 
-                        <TextBlock Text="₹ 0.00"
+                        <!-- BOUND TO VIEWMODEL -->
+
+                        <TextBlock Text="{Binding TodaySales, StringFormat=₹ {0:N2}}"
                                    FontSize="25"
                                    FontWeight="Bold"
                                    Foreground="#15213F"
@@ -392,7 +388,9 @@
                                    FontSize="11"
                                    Foreground="#71809F"/>
 
-                        <TextBlock Text="₹ 0.00"
+                        <!-- BOUND TO VIEWMODEL -->
+
+                        <TextBlock Text="{Binding TodayPurchase, StringFormat=₹ {0:N2}}"
                                    FontSize="25"
                                    FontWeight="Bold"
                                    Foreground="#15213F"
@@ -422,7 +420,9 @@
                                    FontSize="11"
                                    Foreground="#71809F"/>
 
-                        <TextBlock Text="0"
+                        <!-- BOUND TO VIEWMODEL -->
+
+                        <TextBlock Text="{Binding TotalItems}"
                                    FontSize="25"
                                    FontWeight="Bold"
                                    Foreground="#15213F"
@@ -452,7 +452,9 @@
                                    FontSize="11"
                                    Foreground="#71809F"/>
 
-                        <TextBlock Text="0"
+                        <!-- BOUND TO VIEWMODEL -->
+
+                        <TextBlock Text="{Binding TotalCustomers}"
                                    FontSize="25"
                                    FontWeight="Bold"
                                    Foreground="#15213F"
@@ -484,7 +486,7 @@
                                    FontWeight="SemiBold"
                                    Foreground="#15213F"/>
 
-                        <TextBlock Text="Your recent sales, purchases and inventory activity will appear here."
+                        <TextBlock Text="Your recent sales, purchases and inventory activity will appear here"
                                    FontSize="11"
                                    Foreground="#71809F"
                                    Margin="0,10,0,0"/>

@@ -100,7 +100,7 @@ namespace NexaRetail.ViewModels
         public void ShowDashboard()
         {
             CurrentView =
-                new DashboardViewModel(this);
+                new DashboardViewModel();
         }
 
 

@@ -1,4 +1,5 @@
 ﻿using System.Windows.Controls;
+using NexaRetail.ViewModels;
 
 namespace NexaRetail.Views
 {
@@ -7,6 +8,8 @@ namespace NexaRetail.Views
         public DashboardView()
         {
             InitializeComponent();
+
+            DataContext = new DashboardViewModel();
         }
     }
 }

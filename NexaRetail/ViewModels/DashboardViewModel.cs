@@ -5,54 +5,72 @@ namespace NexaRetail.ViewModels
 {
     public class DashboardViewModel : BaseViewModel
     {
-        private readonly MainViewModel _mainViewModel;
-
-
-        // =========================================================
-        // COMMANDS
-        // =========================================================
+        private decimal _todaySales;
+        private decimal _todayPurchase;
+        private int _totalItems;
+        private int _totalCustomers;
 
         public ICommand DashboardCommand { get; }
-
         public ICommand SalesCommand { get; }
 
-
-        // =========================================================
-        // CONSTRUCTOR
-        // =========================================================
-
-        public DashboardViewModel(
-            MainViewModel mainViewModel)
+        public decimal TodaySales
         {
-            _mainViewModel = mainViewModel;
-
-            DashboardCommand =
-                new RelayCommand(
-                    ShowDashboard);
-
-            SalesCommand =
-                new RelayCommand(
-                    ShowSales);
+            get { return _todaySales; }
+            set
+            {
+                if (_todaySales != value)
+                {
+                    _todaySales = value;
+                    OnPropertyChanged(nameof(TodaySales));
+                }
+            }
         }
 
-
-        // =========================================================
-        // DASHBOARD
-        // =========================================================
-
-        private void ShowDashboard()
+        public decimal TodayPurchase
         {
-            _mainViewModel.ShowDashboard();
+            get { return _todayPurchase; }
+            set
+            {
+                if (_todayPurchase != value)
+                {
+                    _todayPurchase = value;
+                    OnPropertyChanged(nameof(TodayPurchase));
+                }
+            }
         }
 
-
-        // =========================================================
-        // SALES
-        // =========================================================
-
-        private void ShowSales()
+        public int TotalItems
         {
-            _mainViewModel.ShowSales();
+            get { return _totalItems; }
+            set
+            {
+                if (_totalItems != value)
+                {
+                    _totalItems = value;
+                    OnPropertyChanged(nameof(TotalItems));
+                }
+            }
+        }
+
+        public int TotalCustomers
+        {
+            get { return _totalCustomers; }
+            set
+            {
+                if (_totalCustomers != value)
+                {
+                    _totalCustomers = value;
+                    OnPropertyChanged(nameof(TotalCustomers));
+                }
+            }
+        }
+
+        public DashboardViewModel()
+        {
+            TodaySales = 0;
+            TodayPurchase = 0;
+            TotalItems = 0;
+            TotalCustomers = 0;
         }
     }
 }
