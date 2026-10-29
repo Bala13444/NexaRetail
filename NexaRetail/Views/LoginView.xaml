@@ -96,7 +96,7 @@
                     <TextBlock Text="WPF"
                                FontSize="52"
                                FontWeight="Bold"
-                               Foreground="Red"
+                               Foreground="{StaticResource PrimaryBlueBrush}"
                                HorizontalAlignment="Left"/>
 
 
