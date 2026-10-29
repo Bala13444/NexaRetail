@@ -34,15 +34,15 @@
         EndPoint="1,1">
 
         <GradientStop
-            Color="#061333"
+            Color="#1A0B2E"
             Offset="0" />
 
         <GradientStop
-            Color="#0B1D52"
+            Color="#4C1D95"
             Offset="0.50" />
 
         <GradientStop
-            Color="#30106B"
+            Color="#7C3AED"
             Offset="1" />
 
     </LinearGradientBrush>
