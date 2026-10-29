@@ -64,7 +64,7 @@ namespace NexaRetail.Commands
 
 
         // =========================================================
-        // REFRESH COMMAND
+        // REFRESH COMMANDS
         // =========================================================
 
         public void RaiseCanExecuteChanged()
