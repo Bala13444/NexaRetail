@@ -82,7 +82,9 @@
                             Background="Transparent"
                             BorderThickness="0"
                             Foreground="#B9C9EA"
-                            HorizontalContentAlignment="Left">
+                            HorizontalContentAlignment="Left"
+                            Cursor="Hand"
+                            Click="SalesButton_Click">
 
                         <StackPanel Orientation="Horizontal">
 

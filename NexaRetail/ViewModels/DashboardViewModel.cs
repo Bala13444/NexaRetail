@@ -67,10 +67,10 @@ namespace NexaRetail.ViewModels
 
         public DashboardViewModel()
         {
-            TodaySales = 0;
-            TodayPurchase = 0;
-            TotalItems = 0;
-            TotalCustomers = 0;
+            TodaySales = 5580;
+            TodayPurchase = 3120;
+            TotalItems = 148;
+            TotalCustomers = 36;
         }
     }
 }
